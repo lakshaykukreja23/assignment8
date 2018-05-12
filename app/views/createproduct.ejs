@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+    .box
+    {
+      padding: 2%;
+      margin-left:2%;
+      margin-right: 2%;
+      margin-top: 0;
+    }
+    body
+    {
+      background: #E9EBEE;
+    }
+    .head
+    {
+      text-align: center;
+    }
+    .input-block
+    {
+      margin: 1%;
+    }
+
+    form div input
+    {
+      width: 100%;
+      margin: 0 !important;
+      padding: 2%;
+    }
+
+    button
+    {
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+      padding: 2%;
+      background-color: transparent;
+      border-radius: 12px;
+    
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+  <div class="box">
+    <p class="head"><b>Create a Product</b></p>
+    <hr>
+    <form class="login-form" action="http://localhost:3000/products/create" method="post">
+      <label class="head"><b>Product Name :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productName" placeholder="Product Name" autofocus required/>
+      </div>
+      <label class="head"><b>Product Price :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="number" name="productPrice" placeholder="Product Price" autofocus required/>
+      </div>
+      <label class="head"><b>Product Description :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productDescription" placeholder="Product Description" autofocus required/>
+      </div>
+      <label class="head"><b>Delivery Time:-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="deliveryTime" placeholder=" delivery time" autofocus required/>
+      </div>
+      <label class="head"><b>Product Category :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productCategory" placeholder="Mention Categories seperated by commas " autofocus required/>
+      </div> 
+      <label class="head"><b>Seller Name :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="sellerName" placeholder="Seller Name" required/>
+      </div>
+      <label class="head"><b>Seller Address :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="sellerAddress" placeholder="Seller Address" autofocus required/>
+      </div>
+      <label class="head"><b>Seller Contact No :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="number" name="sellerContactNumber" placeholder="Contact Number" autofocus required/>
+      </div><br>
+      <button type="submit" name="submit">Create</button>      
+    </form>   
+  </div>
+  </main>
+</body>
+</html>

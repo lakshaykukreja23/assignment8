@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+	.main-form
+		{
+			margin-left: 15%;
+			margin-right: 15%;
+			background: #E9EBEE;
+		}
+		.form-block
+		{
+			margin-left: 45%;
+		}
+		form div input
+    	{
+      		width: 100%;
+      		margin: 0 !important;
+      		padding: 2%;
+    	}
+		body
+		{
+			background: #E9EBEE;
+		}
+		label
+		{
+			margin-left: 5%;
+			padding-top: 35px;
+		}
+		button
+		{
+			margin-top:25px;
+			width: 33%;
+			margin-left: 33%;
+			margin-right: 33%;
+			height: 50px;
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+	<main>
+  	<div class="main-form">
+    <p class="form-block"><b>Login Here</b></p>
+    <hr>
+    <form  action="http://localhost:3000/users/login" method="post">
+      <label><b>Email :</b></label>
+      <div class="form-block" >
+        <input autocomplete="off" type="email" name="email" placeholder="Email" autofocus required/>
+      </div>
+      <label><b>Password :</b></label>
+      <div class="form-block" >
+        <input autocomplete="off" type="password" name="password" placeholder="Password" required/>
+      </div>
+      <p><a  href ="http://localhost:3000/users/forgotpassword/screen" ><b>Forgot Password ?</b></a></p><br>
+      <button type="submit" name="submit">Login</button><br>    
+    </form>
+    <p ><a href ="http://localhost:3000/users/signup/screen" ><b>Not Sign Up yet ?</b></a></p>
+  </div>
+  </main>
+</body>

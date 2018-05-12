@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+  .main
+  {
+    
+      margin-left: 40%;
+      margin-right: 15%;
+      background: #E9EBEE;
+    
+  }
+  body
+  {
+    background: #E9EBEE;
+  }
+</style>
+</head>
+<body>
+  <main>
+
+    <div class="main">
+    <h2><p class="header"><b > Welcome <%= user.firstName %> </b></p></h2>
+    <p> Your Email ID is :- <code> <%= user.email %>  </code></p>
+    <p> Your Security Answer is:- <code><%= user.securityAnswer %></code></p>
+    <p> Your Primary Mobile number  is:- <code><%= user.mobileNumber %></code></p>
+    
+    <br><br><br><br><br>
+
+    <a class="link" href ="http://localhost:3000/users/dashboard" ><b>Home</b></a><br><br>
+    <a class="link" href ="http://localhost:3000/users/changepassword/screen" ><b>Change Password</b></a><br><br>
+    <a class="link" href ="http://localhost:3000/users/addtocart/screen" ><b>add to cart</b></a><br><br>
+    <a class="link" href ="http://localhost:3000/users/removefromcart/screen" ><b>Remove from cart</b></a><br><br>
+    <a class="link" href ="http://localhost:3000/users/allcart" ><b>all items in cart</b></a><br><br>
+    <a class="link" href ="http://localhost:3000/users/logout" ><b>Logout</b></a><br><br>
+  </div>
+  </main>
+
+</body>
+</html>

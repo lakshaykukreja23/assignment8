@@ -1,0 +1,46 @@
+
+
+Base url for users - http://localhost:3000/users/
+
+
+    Methods  |      URLs         |           Descriptions
+			 |                   |
+1)   GET     | /all		 	     | This URL get all users information.
+			 |                   |
+2)   GET     | /login/screen 	 | This will redirect to login page where user can login.
+			 |                   |
+3)   GET     | /signup/screen	 | Signup page URL for new User Registeration.
+			 |                   |
+4)   GET     | /delete/screen    | For Delete user by User Id.
+			 |                   |						
+5)   GET     | /dashboard		 | Home page. 
+			 |                   |
+6)   GET     | /logout			 | Logout API page.
+			 |                   |
+7)   GET     | /changepassword/screen	 | This is used to change your password.
+			 |                   |
+8)  GET      | /allcart			 | For users cart info
+			 |                   |
+			 |                   |
+9)  GET     | /forgotpassword/screen		 | Forgot Password page to recover your password
+			 |                   |
+11)  GET     | /addtocart/screen		 | Add products in to your cart
+			 |                   |
+12)  GET     | /removerfromcart/screen	 | RemoveFromCart page,where you can remove product from the cart
+
+
+Product Urls:
+
+Base url for Products - http://localhost:3000/products
+
+    Methods  |      URLs         |           Descriptions
+			 |                   |
+1)   GET     | /all           	 | This is used to get all products information.
+			 |                   |							
+2)   GET     | /:productId/find  | To get information of perticuler product.
+
+			 |                   |
+3)   GET     | /createproduct/screen		 | Use to create a product.
+			 |                   |
+4)   GET     | /delete/screen		 | Use to delete a product from the list.
+5)   PUT	 | /edit             |    this is used to edit the data

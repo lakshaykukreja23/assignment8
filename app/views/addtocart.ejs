@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+   .addToCart-box
+    {
+      padding: 2%;
+      margin-left:2%;
+      margin-right: 2%;
+      margin-top: 0;
+    }
+
+    .input-block
+    {
+      margin: 1%;
+    }
+
+    form div input
+    {
+      width: 100%;
+      margin: 0 !important;
+      padding: 2%;
+    }
+
+    button
+    {
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+      padding: 2%;
+      background-color: transparent;
+      border-radius: 12px;
+      border: 1px solid gray;
+    }
+      body
+  {
+    background: #E9EBEE;
+  }
+  </style>
+</head>
+<body >
+  <main>
+  <div class="addToCart-box">
+    
+    <h3><p class="header"><b>Add Products To Cart </b></p></h3>
+    <form action="http://localhost:3000/users/cart/add" method="post">
+      <label><b>Product Id :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productId" placeholder="Product ID" autofocus required/> <br> <br><br><br>
+      <button type="submit" name="submit">Add</button><br>
+      </div>
+    </form>
+  </div>
+  </main>
+
+</body>
+</html>

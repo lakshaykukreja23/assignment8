@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+    .box
+    {
+      padding: 2%;
+      margin-left:2%;
+      margin-right: 2%;
+      margin-top: 0;
+    }
+
+    .input-block
+    {
+      margin: 1%;
+    }
+    body
+    {
+    background: #E9EBEE;
+    }
+    .head
+    {
+      text-align: center;
+    }
+    form div input
+    {
+      width: 100%;
+      margin: 0 !important;
+      padding: 2%;
+    }
+
+    button
+    {
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+      padding: 2%;
+      background-color: transparent;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body >
+  <main>
+  <div class="box">
+    <br>
+    <p class ="head"><b>Delete a Product</b></p>
+    <br> <hr>
+    <form class="login-form" action="http://localhost:3000/products/delete" method="post">
+      <label class="head"><b>Product Id :-</b></label></br>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productId" placeholder="Product ID" autofocus required/> <br> <br>
+      <button type="submit" name="submit">Delete</button><br> 
+    </form>
+     </div>
+  </main><br><br>
+</body>
+</html>

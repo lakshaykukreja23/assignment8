@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		.main-form
+		{
+			margin-left: 15%;
+			margin-right: 15%;
+			background: #E9EBEE;
+		}
+		.form-block
+		{
+			margin-left: 45%;
+		}
+		body
+		{
+			background: #E9EBEE;
+		}
+      form div input
+    {
+      width: 100%;
+      margin: 0 !important;
+      padding: 2%;
+    }
+		label
+		{
+			margin-left: 5%;
+		}
+		button
+		{
+			margin-top:25px;
+			width: 33%;
+			margin-left: 33%;
+			margin-right: 33%;
+			height: 50px;
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+	 <main>
+  <div class="main-form">
+    <br>
+    <p class="form-block"><b>Create a New Account</b></p>
+    <br> <hr>
+    <form class="login-form" action="http://localhost:3000/users/signup" method="post">
+      <label><b>First Name :-</b></label></br>
+      <div class="form-block">
+        <input class="input-box" autocomplete="off" type="text" name="firstName" placeholder="First Name" autofocus required/>
+      </div>
+      <label><b>Last Name :-</b></label></br>
+      <div class="form-block">
+        <input class="input-box" autocomplete="off" type="text" name="lastName" placeholder="Last Name" autofocus required/>
+      </div>
+      <label><b>Email :-</b></label></br>
+      <div class="form-block">
+        <input class="input-box" autocomplete="off" type="email" name="email" placeholder="Email" autofocus required/>
+      </div>
+      <label><b>Password :*</b></label></br>
+      <div class="form-block">
+        <input class="input-box" autocomplete="off" type="password" name="password" placeholder="Password" required/>
+      </div>
+      <label><b> Phone Number :-</b></label></br>
+      <div class="form-block">
+        <input class="input-box" autocomplete="off" type="text" name="mobileNumber" placeholder=" Phone Number" autofocus required/>
+      </div>
+      <label><b>Security Question :-</b></label></br>
+      <div style="margin-left: 20%">
+        <p>what was your birth place(Answer must be hard to recognise). </p>
+      </div>
+      <label><b>Security Answer :-</b></label></br>
+      <div class="form-block">
+        <input class="input-box" autocomplete="off" type="text" name="securityAnswer" placeholder="Security Answer" autofocus required/>
+      </div>
+      <button type="submit" name="submit"><b>Signup</b></button><br>
+    </form>
+    <p style="margin-left: 5%"><b>Already have an account?</b> </p>
+    <p class="form-block"><a class="link" href ="http://localhost:3000/users/login/screen" ><b>Log in</b></a></p><br>
+   </a></p>
+  </div>
+  </main>
+</body>
